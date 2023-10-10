@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-09 08:51:21 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwMzIxOzIwMjMtMTAtMDk7MDg6Mzc6MjggcC4gbS47Mjg0Mg=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwMzIxOzIwMjMtMTAtMDk7MDg6NTE6MjEgcC4gbS47MTsyOTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="r" type="Real" array="False" size=""/>
+            <output expression="&quot;Introduce un n&#250;mero:&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="r" expression="x % 2"/>
+            <if expression="r = 0">
+                <then>
+                    <output expression="&quot;El valor &quot; &amp; x &amp; &quot; es par.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El valor &quot; &amp; x &amp; &quot; es impar.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
