@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-10 07:32:45 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwMjA3OzIwMjMtMTAtMTA7MDc6MDQ6MzggcC4gbS47MjgzMQ=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwMjA3OzIwMjMtMTAtMTA7MDc6MzI6NDUgcC4gbS47MTsyOTM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce el a&#241;o:&quot;" newline="True"/>
+            <input variable="year"/>
+            <assign variable="r" expression="year % 4"/>
+            <if expression="r = 0">
+                <then>
+                    <assign variable="r" expression="year % 100"/>
+                    <if expression="r = 0">
+                        <then>
+                            <assign variable="r" expression="year % 400"/>
+                            <if expression="r = 0">
+                                <then>
+                                    <output expression="&quot;Es a&#241;o bisiesto wuuuuuu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;No es a&#241;o bisiesto, PUUUUUUM&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;PUM, es a&#241;o bisiesto wuuuuu&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;uuui no, no es a&#241;o bisiesto.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
